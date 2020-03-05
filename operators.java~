@@ -1,0 +1,62 @@
+import java.util.Scanner;
+class operators
+{
+public static void main(String args[])
+{
+int choice,a,b,add,sub,mul,div,mod;
+Scanner sc=new Scanner (System.in);
+
+System.out.println(" ***MENU***");
+System.out.println(" select 1 for  addition");
+System.out.println("select 2 for  subtration");
+System.out.println("select 3 for  multiplication");
+System.out.println(" select 4 for  division");
+System.out.println(" select 5 for  modulus");
+
+
+System.out.println("Enter switch no");
+choice=sc.nextInt();
+
+System.out.println("Enter a");
+a=sc.nextInt();
+
+System.out.println("Enter b");
+b=sc.nextInt();
+
+
+switch(choice)
+{
+
+  case 1:add=a+b;
+  System.out.println("Addition is="+add);
+  break;
+
+  case 2:sub=a-b;
+  System.out.println("subtration is="+sub);
+  break;
+                      
+  case 3:mul=a*b;
+  System.out.println("Multiplition is="+mul);
+  break;
+
+  case 4:div=a/b;
+  System.out.println("Division is is="+div);
+  break;
+  
+   case 5: 
+     if(a<0)
+   {
+     a=a*(-1);
+   }
+  System.out.println("Modulus is ="+a);
+  if(b<0)
+   {
+     b=b*(-1);
+   }
+   
+  System.out.println("Modulus is ="+b);
+  break;
+  default:System.out.println("Otherwise exit the program");
+}
+}
+}
